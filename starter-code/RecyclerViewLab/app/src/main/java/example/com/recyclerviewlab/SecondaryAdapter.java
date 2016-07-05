@@ -36,13 +36,14 @@ public class SecondaryAdapter extends RecyclerView.Adapter<SecondaryViewHolder> 
         myHolder.setColor(ContextCompat.getColor(holder.getContext(), object.getColor()));
         myHolder.setTitleView(object.getTitle());
         myHolder.setDescription(object.getDescription());
+
         myHolder.setCheckBox(object.isChecked());
 
         holder.setCheckBoxListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 boolean checked = ((CheckBox) view).isChecked();
-                object.setChecked(!checked);
+                object.setChecked(checked);
             }
         });
         holder.setRowOnClickListener(new View.OnClickListener() {
