@@ -11,6 +11,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    //The better way to do this is with Abstract Classes/Interfaces for the ViewHolders and possibly Adapters
+
     private List<MainObject> mObjects;
     private LinearLayoutManager mLayoutManager;
     private MainAdapter mAdapter;
